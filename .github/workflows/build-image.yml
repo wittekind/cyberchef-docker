@@ -81,6 +81,7 @@ jobs:
         with:
           push: true
           tags: ghcr.io/wittekind/cyberchef:latest
+          platforms: ${{ matrix.platforms }}
           context: .
       -
         name: Image digest
