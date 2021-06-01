@@ -38,6 +38,7 @@ jobs:
           name: prod
           path: build/prod
   build-container:
+    needs: build-app
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
