@@ -51,14 +51,14 @@ jobs:
           - linux/arm/v7
     steps:
       -
+        name: Checkout for Dockerfile
+        uses: actions/checkout@v2
+      -
         name: Download CyberChef prod build
         uses: actions/download-artifact@v2
         with:
           name: prod
           path: build/prod
-      -
-        name: Checkout for Dockerfile
-        uses: actions/checkout@v2
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
