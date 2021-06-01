@@ -55,7 +55,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: prod
-          path: prod
+          path: build/prod
       -
         name: Checkout for Dockerfile
         uses: actions/checkout@v2

@@ -1,2 +1,2 @@
 FROM nginx
-COPY prod /usr/share/nginx/html
+COPY build/prod /usr/share/nginx/html
